@@ -1,12 +1,6 @@
 // Напиши стрілочну функцію getUserNames(users), яка прийматиме один параметр users — масив об’єктів користувачів. Функція має повертати масив імен усіх користувачів (властивість name) із масиву users
 
-const getUserNames = function (users) {
-  const names = [];
-  users.map(({ name }) => {
-    names.push(name);
-  });
-  return names;
-};
+const getUserNames = users => users.map(({ name }) => name);
 
 console.log(
   getUserNames([
